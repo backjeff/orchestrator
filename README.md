@@ -10,3 +10,5 @@ This repository provides a minimal setup to run Apache Airflow using Docker Comp
 4. Access the Airflow web interface at [http://localhost:8080](http://localhost:8080) with username `admin` and password `admin`.
 
 The provided `docker-compose.yml` file starts all necessary services, including Postgres, Redis, the Airflow webserver, scheduler, worker, triggerer, and Flower.
+
+An example DAG is included in `dags/hello_world.py`. It prints messages and the current time, runs every 10 minutes, and can be enabled from the Airflow UI.
